@@ -1,0 +1,18 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: draft.aux
+The style file: natdin.bst
+A level-1 auxiliary file: chapter/titelseite.aux
+A level-1 auxiliary file: chapter/abstract.aux
+A level-1 auxiliary file: chapter/inhaltsverzeichnis.aux
+A level-1 auxiliary file: chapter/vorwort.aux
+A level-1 auxiliary file: chapter/motivation.aux
+A level-1 auxiliary file: chapter/grundlagen.aux
+A level-1 auxiliary file: chapter/umsetzung.aux
+A level-1 auxiliary file: chapter/verzeichnisse.aux
+Illegal, another \bibstyle command---line 15 of file chapter/verzeichnisse.aux
+ : \bibstyle
+ :          {geralpha}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: chapter/anhang.aux
+A level-1 auxiliary file: chapter/eid.aux
+Database file #1: literatur.bib
+(There was 1 error message)

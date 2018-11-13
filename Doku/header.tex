@@ -1,0 +1,230 @@
+\documentclass[BCOR=12mm,DIV11,titlepage,a4paper,oneside]{scrbook}
+
+%Paket für deutsche Silbentrennung etc.
+\usepackage{ngerman}
+
+%Paket für Zeichenkodierung, entspricht UTF-8
+\usepackage[utf8x]{inputenc}
+
+%Paket das die Ausgabefonts definiert
+\usepackage[T1]{fontenc}
+
+%Paket für Sonderzeichen wir RightsReserved
+\usepackage{textcomp}
+
+%Euro-Symbol
+\usepackage[right]{eurosym}
+
+% Matheumgebung
+\usepackage[]{framed, amsmath}
+
+%Paket für das Einbinden von Grafiken über die figure-Umgebung
+\usepackage{graphicx}
+
+%Paket zum Ändern der Kopf- und Fußzeile
+\usepackage{fancyhdr}
+%Benutzt das Paket für eigenen Seitenstil
+\pagestyle{fancy} 
+%Erzeugt eine Linie in der Kopfzeile (lässt sich mit 0.0pt ausblenden)
+\renewcommand*{\headrulewidth}{0.8pt} 
+\renewcommand*{\headrule}{\hbox to\headwidth{%
+    \color{thmagenta}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhf{}
+\fancyhead[EC,OC]{\thepage}
+% \fancyhead[EL]{\leftmark} 
+% \fancyhead[OR]{\rightmark} 
+% \fancyhead[ER,OL]{\thepage}
+\renewcommand{\sectionmark}[1]{ 
+\markboth{\thechapter{} #1}{\thechapter{} #1} 
+}
+% Ermöglicht ToDos ansprechend zu setzen
+\usepackage{xargs} 
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+%Ändert die Seitennummerierung beim Inhaltsverzeichnis mit eigenem Stil
+\renewcommand*{\indexpagestyle}{fancy}
+%Verhindert die Seitennummerierung auf den Part-Seiten
+\renewcommand*{\partpagestyle}{empty}
+%Ändert die Seitennummerierung bei Chapter mit eigenem Stil
+\renewcommand*{\chapterpagestyle}{fancy}
+
+%Abbildungsnummerierung ändern (abhängig von chapter, z.B. Abbildung 1.1)
+\renewcommand*{\thefigure}{\thechapter.\arabic{figure}}
+%Tabellennummerierung ändern (abhängig von chapter, z.B. Tabelle 1.1)
+\renewcommand*{\thetable}{\thechapter.\arabic{table}}
+
+%Paket, um ein Glossar/Abkürzungsverzeichnis anzulegen
+\usepackage[intoc]{nomencl}
+\let\abbrev\nomenclature
+%Der Name wird in Glossar geändert
+\renewcommand{\nomname}{Glossar}
+%Definiert die Aufteilung im Glossar zwischen Begriffen und Erläuterung
+\setlength{\nomlabelwidth}{.25\hsize}
+%Definiert die Punktelinien im Glossar
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\setlength{\nomitemsep}{-\parsep}
+%Veranlasst die Erstellung des Glossars
+\makenomenclature
+
+%Einrückungen nach Absätzen und Grafiken verhindern
+\setlength{\parindent}{0pt}
+
+\usepackage[nohyperlinks, printonlyused, withpage, smaller]{acronym}
+
+
+%Verhindern, dass eine neue Seite für ein einzelnes Wort/Zeile verwendet wird
+\clubpenalty = 10000 % schliesst Schusterjungen aus 
+\widowpenalty = 10000 % schliesst Hurenkinder aus (keine Beleidigung, sondern wirklich ein Fachbegriff)
+
+%Paket für ein deutsches Literaturverzeichnis
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{natdin}
+% \setlength\bibhang{30pt}
+
+%Paket für die Verwendung von URLs durch den Befehl \url{}
+\usepackage{url}
+
+%Paket für Zeilenabstand (onehalfspace, singlespace)
+\usepackage{setspace}
+
+%Paket zur Erzeugung von Anführungszeichen durch \enquote{Text}
+\usepackage[ngerman]{babel}
+\usepackage[babel, german=quotes]{csquotes}
+
+%Paket für farbigen Text
+%black,white,green,red,blue,yellow,cyan,magenta
+\usepackage{color}
+%Farbige Tabellen
+\usepackage{colortbl}
+
+%Rotation von Gleitobjekten (Grafiken, Trabellen, etc.)
+\usepackage{rotating}
+
+%Rotation von einzelnen Seiten begin{landscape}
+\usepackage{lscape}
+
+%Paket für farbigen Hintergrund für Verbatim-Umgebung (Quelltext-Umgebung)
+\usepackage{fancyvrb}
+\usepackage{verbatim,moreverb}
+%Grauton für Quelltext-Umgebung definieren 80% Grau
+\definecolor{sourcegray}{gray}{.80}
+
+%Definition der TH Köln-Farben
+\definecolor{thred}{cmyk}{0.0,1.0,1.0,0.15}
+\definecolor{thorange}{cmyk}{0.0,0.75,1.0,0.0}
+\definecolor{thmagenta}{cmyk}{0.3,0.95,0.0,0.0}
+\definecolor{thblack}{cmyk}{0.0,0.0,0.0,1.0}
+
+%Paket für Quelltext-Umgebung
+\usepackage{listings}
+%Alternative Quelltext-Umgebung
+%\lstset{numbers=left, 
+%	numberstyle=\tiny, 
+%	numbersep=5pt,
+%	language=Java,
+%	breaklines=true,
+%	breakautoindent=true,
+%	postbreak=\space,
+%	tabsize=2,
+%	frame=tlrb,
+%	basicstyle=\ttfamily\footnotesize}
+
+\usepackage{tikz}
+
+\tikzstyle{sourcecodebox} = [
+    draw=blue, very thick,
+    rectangle, rounded corners,
+    inner sep=10pt
+]
+\tikzstyle{sourcecodetitle} = [
+    fill=black, text=white,
+    rectangle, rounded corners
+]
+
+\makeatletter
+\lstnewenvironment{javacode}[1][]{%
+    \def\javacodetitle{#1}%
+    \lstset{%
+        language=java,
+        basicstyle=\ttfamily\footnotesize,
+        escapeinside={(*@}{@*)},
+        %numbers=left,
+        breaklines=true,
+        breakatwhitespace=true,
+        showspaces=false,
+        showstringspaces=false,
+        frame=shadowbox,
+        frameround=rrrt,
+        keywordstyle=\color{blue}\ttfamily,
+        commentstyle=\color{comment}\ttfamily,
+        linewidth=.95\textwidth,
+        rulecolor=\color{black},
+        rulesepcolor=\color{gray}
+    }%
+    \setbox\@tempboxa=\hbox\bgroup\color@setgroup
+}%
+{%
+    \color@endgroup\egroup
+    \begin{tikzpicture}
+        \node[sourcecodebox] (box)
+            % Makebox is needed to take the frame added by listings into account
+            {\makebox[.95\textwidth][l]{\box\@tempboxa}};
+        \node[sourcecodetitle] at (box.north) 
+        {\javacodetitle};
+    \end{tikzpicture}
+}
+
+% Implementierung innerhalb des Dokumentes
+%\begin{javacode}[Initialisierung AlchemyAPI]
+%public static AlchemyAPI alchemyObj;
+%
+%public static void init() {
+%    alchemyObj = AlchemyAPI.GetInstanceFromString(KEY);
+%}
+%
+%\end{javacode}
+
+%Paket für Positionierung der Objekte ohne Float (Verwendungsbsp.: \begin{figure}[H])
+%\usepackage{here}
+%Alternatives Paket für here.sty
+\usepackage{float}
+
+%DRAFT als Wasserzeichen im Hintergrund
+% \usepackage{draftwatermark} 
+% \SetWatermarkAngle{60}
+% \SetWatermarkScale{5.0}
+
+%Für lange Tabellen
+\usepackage{longtable,array,supertabular}
+
+%Für rowspan in Tabellen
+\usepackage{multirow}
+
+%Behält die Schriftgröße der Überschrift normal, wenn z.B. die Schriftgröße in einer Tabelle verändert wird
+\addtokomafont{caption}{\normalsize} 
+
+%Paket um PDF Seiten einzubinden
+\usepackage{pdfpages}
+
+%Paket zur Erzeugung von Hyperrefs und PDF Informationen
+\usepackage[pdftex,plainpages=false,pdfpagelabels,
+            pdftitle={title},
+            pdfauthor={name}
+            ]{hyperref}
+%Farben für Links
+%Farbige Ränder bei false und farbige Texte bei true
+\hypersetup{colorlinks=true,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+
+\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
+
+%Zwei Verzeichnisse für Inhalt und Anhang
+\usepackage{appendix}
+% \usepackage{minitoc} 
+% \nomtcrule
+% \renewcommand{\mtctitle}{Anhangsverzeichnis}
+% \setlength{\mtcindent}{0pt}

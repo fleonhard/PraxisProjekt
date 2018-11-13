@@ -1,0 +1,50 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{Anforderung}]\begingroup  Eine Anforderung (engl. Requirement) ist eine Aussage über eine zu erfüllende Eigenschaft (einem Ziel) oder zu erbringende Leistung eines Produktes, Systems oder Prozesses. Also etwas, das das Zielprodukt/-system können muss. \citep{GLOSS} \vspace{4mm} \label{gloss:anforderung} \nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Bonuspunkte}]\begingroup Eine Prüfungsleistung in Punkten, die der Praktikumsteilnehmer während des Praktikums durch seine Leistungen sammeln kann. \vspace{4mm}\nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Epic}]\begingroup Die Beschreibung einer Anforderung an eine Software auf einer hohen Abstraktionsebene.\vspace{4mm}\nomeqref {\relax 4.0}
+		\nompageref{43}
+  \item [{Funktion-Points}]\begingroup Ein Maß für den Aufwand der Umsetzung einer Funktionalität. Diese finden Anwendung in der Function-Point-Analyse\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Funktionale Anforderungen}]\begingroup  Funktionale Anforderungen beschreiben gewünschte Funktionalitäten (was soll das System tun/können) eines Systems bzw. Produkts, dessen Daten oder Verhalten \citep{GLOSS} \vspace{4mm} \label{gloss:funktionaleanforderungen} \nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Modul}]\begingroup Ein Modul aus dem Modulhandbuch der TH-Köln.\vspace{4mm}\nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Potentieller Nutzer}]\begingroup Ein möglicher zukünftiger Nutzer eines Systems.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Produkt}]\begingroup Ein weiteres Synonym für das zu entwickelnde System.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Projekt}]\begingroup Der Prozess zur Planung und Entwicklung eines Systems.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Qualitätseigenschaften}]\begingroup  Qualitätseigenschaften beschreiben die Qualität in welcher die geforderte Funktionalität zu erbringen ist. \vspace{4mm} \label{gloss:qualitätseigenschaft} \nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Randbedingung}]\begingroup  Eine Randbedingung ist eine Bedingung die Einfluss auf das Projekt haben kann. \vspace{4mm} \label{gloss:randbedingung} \nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Requirement-Engineer}]\begingroup Die Person, welche das Requirement-Engineering durchführt.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Requirement-Engineering}]\begingroup Der Prozess der Ermittlung, Analyse, Auswertung und Bearbeitung von Anforderungen.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Staffelplan}]\begingroup Ein Terminplan für das Praktikum in dem alle Termine mit den dazugehörigen Gruppen / Praktikumsteilnehmer eingetragen sind.\vspace{4mm}\nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Stakeholder}]\begingroup  Ein Stakeholder ist eine Person, Organisation oder Gruppe von Personen, die am Projekt aktiv beteiligt ist oder durch den Projektverlauf oder das Projektergebnis beeinflusst wird (sowohl positiv wie auch negativ), oder die den Projektverlauf oder das Projektergebnis beeinflussen kann (auch dies positiv oder negativ). \citep{GLOSS} \vspace{4mm} \label{gloss:stakeholder} \nomeqref {\relax 1.0}
+		\nompageref{7}
+  \item [{Story-Points}]\begingroup Ein Maß zur Angabe der Komplexität einer User-Story.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{System}]\begingroup System wird im Kontext dieser Arbeit als Synonym für das zu entwickelnde System eingesetzt.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Usability}]\begingroup Das Ausmaß, in dem ein Produkt durch bestimmte Benutzer in einem Nutzungskontext benutzt werden kann, um ein Ziel effektiv, effizient und zufriedenstellend zu erreichen.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Use-Cases}]\begingroup Eine Art Funktionalitäten die ein System bieten soll zu beschreiben.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{User}]\begingroup Der Nutzer eines Systems.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{User-Story}]\begingroup Eine Art Anforderungen aus der Sicht des Nutzer zu dokumentieren.\vspace{4mm}\nomeqref {\relax 2.0}
+		\nompageref{23}
+  \item [{Ziel}]\begingroup  Ein Ziel bezeichnet einen in der Zukunft liegenden, gegenüber dem Heutigen im allgemeinen veränderten, angestrebten Zustand. Ein Ziel ist somit ein definierter und angestrebeter Endpunkt eines Prozesses. \citep{GLOSS} \vspace{4mm} \label{gloss:ziel} \nomeqref {\relax 1.0}
+		\nompageref{7}
+
+\end{thenomenclature}

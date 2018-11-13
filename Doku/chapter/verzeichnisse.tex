@@ -1,0 +1,39 @@
+%!TEX root = ../draft.tex
+
+  
+  	%Erzeugt ein Abbildungsverzeichnis
+	\listoffigures
+	%Fügt die Zeile "`Abbildungsverzeichnis"' als Chapter ins Inhaltsverzeichnis ein
+	\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+	
+	
+	%Erzeugt ein Glossar
+	\printnomenclature
+	%Fügt die Zeile "`Glossar"' als Chapter ins Inhaltsverzeichnis ein
+	%\addcontentsline{toc}{chapter}{Glossar}
+	
+	\chapter*{Abkürzungsverzeichnis}
+	\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+	\begin{acronym}[FPGA]
+	 \setlength{\itemsep}{-\parsep}
+	 \acro{LWM}{Labwork Management}
+	 \acro{RE}{Requirements Engineering}
+	 \acro{MCI}{Mensch-Computer-Interaktion}
+	 \acro{US}{User-Story}
+	 \acro{SP}{Story-Points}
+	 \acro{FPA}{Function-Point-Analyse}
+	 \acro{FP}{Function-Points}
+	 \acro{SHK}{studentische Hilfskräfte}
+	 \acro{WHK}{wissenschaftliche Hilfskräfte}
+	\end{acronym}		
+		
+	%Ändert den Stil des Literaturverzeichnisses
+	\bibliographystyle{geralpha}
+	%Erzeugt das Literaturverzeichnis anhand der Datei "`literatur.bib"'
+	\pagebreak
+	\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+	\bibliography{literatur}
+	%Fügt die Zeile "`Literaturverzeichnis"' als Chapter ins Inhaltsverzeichnis ein
+  
+  	
+\nocite{*}

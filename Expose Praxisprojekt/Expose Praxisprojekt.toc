@@ -1,0 +1,4 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {0.1}Projektidee}{2}{section.0.1}
+\contentsline {section}{\numberline {0.2}Projektverlauf}{2}{section.0.2}
+\contentsline {section}{\numberline {0.3}Projektumgebung}{2}{section.0.3}
